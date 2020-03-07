@@ -1,7 +1,7 @@
 const path = require("path")
 
 exports.createPages = async ({ graphql, action }) => {
-  const { createPage } = actions
+  const { createPage } = action
 
   const pages = await graphql(`
     {
