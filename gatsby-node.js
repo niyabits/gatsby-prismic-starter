@@ -23,7 +23,7 @@ exports.createPages = async ({ graphql, actions }) => {
       path: `/${edge.node.uid}`,
       component: template,
       context: {
-        uid: edg.node.uid,
+        uid: edge.node.uid,
       },
     })
   })
